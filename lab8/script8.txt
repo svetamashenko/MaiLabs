@@ -1,0 +1,8 @@
+# !/bin/bash
+
+gcc lab8_1.c -o lab8_1.exe -g
+gcc lab8_2.c -o lab8_2.exe -g
+gcc lab8_3.c -o lab8_3.exe -g
+gcc lab8_4.c -o lab8_4.exe -g
+
+gdb lab8_4.exe
