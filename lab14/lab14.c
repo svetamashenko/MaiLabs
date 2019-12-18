@@ -11,20 +11,31 @@ int rank(int a){
    }
 }
 
-
-
-
 void diagonal_up(int a, int k, int tab[]){
     int c;
-    for ( int i = 1; i <= k-((k*k)-a); i++ ){
-        printf("%d ", tab[k*k-(i-1)*(k+1)-(k*k-a)]);
+    for ( int i = 1; i <= (k*k - a) % k + 1; i++ ){
+        printf("%d ", tab[a - (k - 1)*(i - 1)]);
+    }
+}
+ 
+void diagonal_down(int a, int k, int tab[]){
+    int c;
+    for ( int i = 1; i <= (k*k - a) / k + 1; i++ ){
+        printf("%d ", tab[a + (k - 1)*(i - 1)]);
     }
 }
 
-void diagonal_down(int a, int k, int tab[]){
+void diagonal_up2(int a, int k, int tab[]){
     int c;
-    for ( int i = 1; i <= k+1-a; i++ ){
-        printf("%d ", tab[(i-1)*(k+1)+a]);
+    for ( int i = 1; i <= (k*k - a) % k ; i++ ){
+        printf("%d ", tab[a - (k - 1)*(i - 1)]);
+    }
+}
+ 
+void diagonal_down2(int a, int k, int tab[]){
+    int c;
+    for ( int i = 1; i <= a ; i++ ){
+        printf("%d ", tab[a + (k - 1)*(i - 1)]);
     }
 }
 
@@ -35,14 +46,17 @@ int main(){
     while ( scanf ( "%d", &value) != EOF){
         table[k+1]=value;
     k+=1;
-    
     }
     rang = rank(k);
-    diagonal_up(k, rang, table);
-    for( int i = 1; i < rang; i++){
-        diagonal_down(1+i, rang, table);
-        diagonal_up(k-i, rang, table);
+    for (int i = 0; i <= rang/4 ; i++ ){
+        diagonal_up( rang*rang - 2*i , rang, table);        
+        diagonal_down( rang*(rang - 2*i - 1) , rang, table);
+        }
+
+    for (int i = 0; i <= rang/4 - 1; i++ ){
+        diagonal_up2( rang*(rang - 2 * (i + 1)) + 1, rang, table);
+        diagonal_down2( rang - 2*(i + 1) , rang, table);
     }
-    
+printf ("%d", table[1]);
     return 0;
 }
