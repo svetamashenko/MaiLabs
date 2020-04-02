@@ -1,0 +1,30 @@
+#!usr\bin\bash
+#Delete all files with with the specified suffix if there are files with the same names but otheк suffixes"
+
+if [ $# = 1 ]
+then
+    if [ $1 = "--help" ]
+    then 
+    echo "Usage: lab21 [suffix]"
+    exit 0
+    fi
+
+cd test
+specsuff=$1
+number=$(find -name "*.$specsuff" | wc -l)
+
+for (( i=1; i <= number; i++ )) do
+current=$(find -name "*.$specsuff" | tail -$i | head -1 | sed -e 's/.'$specsuff'//g' | cut -c 3-)
+other=$(find -name "$current.*" -not -name "*.$specsuff") 
+if [ "$other" != '' ]
+then
+rm $current.$specsuff
+fi
+done
+
+ exit 0
+fi
+
+echo "Error$0x00000ff"
+echo "Usage key --help for manual"
+exit 0
