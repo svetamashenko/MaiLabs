@@ -1,14 +1,20 @@
+#include <time.h>
 #include <stdio.h>
+#include <stdlib.h>
+
 #include "data.h"
 #include "add_delete.h"
+#include "text_output.h"
+#include "range.h"
 
 int menu()
 {
     printf("%s\n", "1. Add cell.");
     printf("%s\n", "2. Delete cell.");
     printf("%s\n", "3. Text output.");
-    printf("%s\n", "4. Check diapazon.");
-    printf("%s\n", "5. Exit.");
+    printf("%s\n", "4. Check range.");
+    printf("%s\n", "5. Random filling.");
+    printf("%s\n", "6. Exit.");
     int ans;
     scanf("%d", &ans);
     return ans;
@@ -20,7 +26,7 @@ int main()
     cell *root_tmp = &root;
     printf("%s\n", "Welcome!");
     int k = 0;
-    while (k != 5)
+    while (k != 6)
     {
         k = menu();
         switch (k)
@@ -47,19 +53,37 @@ int main()
             delete (root_tmp, val);
             printf("%c", value);
             printf("\n");
-            break;
         }
+        break;
         case 3:
-            //text_output
+            text_out(root_tmp, 0);
             break;
         case 4:
-            //function
-            break;
+        {
+            char value1, value2;
+            getchar();
+            printf("%s ", "Enter a char`s:");
+            scanf("%c %c", &value1, &value2);
+            int val1 = value1;
+            int val2 = value2;
+            range(root_tmp, val1, val2);
+            printf("\n");
+        }
+        break;
         case 5:
+        {
+            int i, r;
+            srand(time(NULL));
+            for (i = 0; i < 20; i++)
+            {
+                add(root_tmp, (rand() % 95 + 32));
+            }
+        }
+        break;
+        case 6:
             //exit
             break;
         default:
-
             printf("%s\n\n", "Try again.");
             break;
         }
