@@ -18,8 +18,8 @@ void range(cell *tmp, int value1, int value2)
     check1 = tmp->value;
     if (check1 >= value1 && check2 <= value2)
     {
-        printf("%s\n", "Tree is in range");
+        printf("%s\n", "Tree is in range.");
         return;
     }
-    printf("%s\n", "Tree isn`t in range");
+    printf("%s\n", "Tree isn`t in range.");
 }

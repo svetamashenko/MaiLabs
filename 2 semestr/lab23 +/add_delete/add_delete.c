@@ -56,7 +56,7 @@ void add(cell *tmp, int new_value)
         (*tmp).left = (cell *)malloc(sizeof(cell));
         if ((tmp->left) == NULL)
         {
-            printf("%s\n", "Out of memory");
+            printf("%s\n", "Out of memory.");
             return;
         }
         (*(*tmp).left).left = NULL;
