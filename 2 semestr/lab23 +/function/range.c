@@ -1,7 +1,5 @@
-#ifndef CHECK_H
-#define CHECK_H
 #include <stdio.h>
-#include "data.h"
+#include "../data.h"
 
 void range(cell *tmp, int value1, int value2)
 {
@@ -25,5 +23,3 @@ void range(cell *tmp, int value1, int value2)
     }
     printf("%s\n", "Tree isn`t in range");
 }
-
-#endif

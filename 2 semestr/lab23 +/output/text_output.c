@@ -1,12 +1,14 @@
-#ifndef TEXT_OUTPUT_H
-#define TEXT_OUTPUT_H
-
 #include <stdio.h>
-#include "data.h"
+#include "../data.h"
 #include <math.h>
 
 void text_out(cell *tmp, int space)
 {
+    if (!tmp)
+    {
+        printf("%s\n", "Tree is empty");
+        return ;
+    }
     int i = space;
     if (tmp->right)
     {
@@ -24,5 +26,3 @@ void text_out(cell *tmp, int space)
         text_out(tmp->left, space + 1);
     }
 }
-
-#endif
