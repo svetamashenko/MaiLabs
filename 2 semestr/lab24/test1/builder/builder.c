@@ -61,6 +61,14 @@ cell *add_char(char sign, cell *tmp)
         }
         else
         {
+            while (((tmp->parent) != NULL) && (!(tmp->left) || (tmp->right)))
+            {
+                tmp = tmp->parent;
+            }
+            while ((tmp->right) != NULL)
+            {
+                tmp = tmp->left;
+            }
             Cret(tmp->right, cell);
             tmp->right->val.oper = sign;
             tmp->right->right = NULL;
