@@ -4,7 +4,7 @@
 
 void convert(cell *tmp)
 {
-    if (((tmp->left->val.oper) == '*') && (tmp->type) == 1)
+    if (((tmp->left->val.oper) == '*') && ((tmp->type) == 1) && ((tmp->left->right->type) == 0))
     {
         int k = (tmp->left->val.value);
         for (int i = 1; i < k; i++)
@@ -20,19 +20,25 @@ void convert(cell *tmp)
                 (tmp->left->right->val.value)--;
             }
             else
-            cleaner(tmp);
-            
+                cleaner(tmp);
         }
     }
-    if (((tmp->left->val.oper) == '*') && (tmp->left->right->type) == 1)
+    if (((tmp->left->val.oper) == '*') && ((tmp->type) == 0) && ((tmp->left->right->type) == 1))
     {
+        int c = tmp->left->right->val.value;
+        tmp->left->right->val.oper = tmp->val.oper;
+        tmp->val.value = c;
+        tmp->left->right->type=0;
+        tmp->type = 1;
+        convert(tmp);
     }
 }
 
-void cleaner(cell *tmp){
+void cleaner(cell *tmp)
+{
     if (tmp->left)
-    cleaner(tmp->left);
+        cleaner(tmp->left);
     if (tmp->right)
-    cleaner(tmp->right);
+        cleaner(tmp->right);
     free(tmp);
 }
