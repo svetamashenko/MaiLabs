@@ -3,5 +3,6 @@
 #include "../data.h"
 
 void convert(cell *tmp);
+void cleaner(cell *tmp);
 
 #endif

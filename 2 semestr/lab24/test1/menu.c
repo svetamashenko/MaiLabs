@@ -3,13 +3,15 @@
 #include "data.h"
 #include "./builder/builder.h"
 #include "./output/text_output.h"
+#include "./function/function.h"
 
 int menu()
 {
     printf("%s\n", "1. Add int.");
     printf("%s\n", "2. Add char.");
     printf("%s\n", "3. Text output.");
-    printf("%s\n", "4. Exit.");
+    printf("%s\n", "4. Convertation.");
+    printf("%s\n", "5. Exit.");
     int ans;
     scanf("%d", &ans);
     return ans;
@@ -21,7 +23,7 @@ int main()
     printf("%s\n", "Welcome!");
     int k = 0;
 
-    while (k != 4)
+    while (k != 5)
     {
         k = menu();
         switch (k)
@@ -50,6 +52,7 @@ int main()
         break;
         case 3:
         {
+            getchar();
             while ((tmp->parent) != NULL)
                 tmp = tmp->parent;
             text_out(tmp, 0);
@@ -57,8 +60,13 @@ int main()
         break;
         case 4:
         {
-            break;
+            getchar();
+            while ((tmp->parent) != NULL)
+                tmp = tmp->parent;
+            convert(tmp);
         }
+        case 5:
+            break;
         default:
             printf("%s\n\n", "Try again.");
             break;
