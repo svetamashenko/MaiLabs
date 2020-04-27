@@ -63,7 +63,7 @@ int main()
             getchar();
             while ((tmp->parent) != NULL)
                 tmp = tmp->parent;
-            convert(tmp);
+            convertor(tmp);
         }
         case 5:
             break;

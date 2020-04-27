@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #include "data.h"
 #include "function/function.h"
+#include "parse_exp/parse.h"
+#include "output/tree_output.h"
+#include "cleaner/cleaner.h"
 
 int menu(void)
 {
@@ -21,6 +25,7 @@ int main()
     cell *root_tmp = NULL;
     printf("%s\n", "Welcome!");
     int k = 0;
+
     while (k != 5)
     {
         k = menu();
@@ -29,14 +34,23 @@ int main()
         case 1:
         {
             getchar();
-            //root_tmp = enter(root_tmp);
+            clean_tree(root_tmp);
+            root_tmp = parse(root_tmp);
+            if (!root_tmp)
+            {
+                printf("%s\n", "Errur");
+            }
+            while (root_tmp->parent)
+            {
+                root_tmp = root_tmp->parent;
+            }
             printf("\n");
         }
         break;
         case 2:
         {
             getchar();
-            //func(root_tmp);
+            func(root_tmp);
             printf("\n");
         }
         break;
@@ -50,7 +64,7 @@ int main()
         case 4:
         {
             getchar();
-            //tree_out(root_tmp);
+            tree_out(root_tmp, 1);
             printf("\n");
         }
         break;
