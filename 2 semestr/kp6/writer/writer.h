@@ -1,6 +1,6 @@
 #ifndef WRITER_H
 #define WRITER_H
-#include "../data.h"
+#include "../data.h" 
 
 void writer(select_type);
 
