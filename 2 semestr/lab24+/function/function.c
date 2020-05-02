@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <malloc.h>
 #include "../data.h"
 #include "function.h"
+#include "../cleaner/cleaner.h"
 #define Cret(tmp, type)                 \
     tmp = (type *)malloc(sizeof(type)); \
     if (!tmp)                           \
@@ -11,121 +11,109 @@
         return;                         \
     }
 
-#define new_br(new)                                    \
-    Cret(new->right, cell);                            \
-    new->right->parent = new;                          \
-    new = new->right;                                  \
-    Cret(new->right, cell);                            \
-    new->right->parent = new;                          \
-    new = new->right;                                  \
-    new->parent->type = 0;                             \
-    new->parent->parent = new->parent->parent->parent; \
-    new->parent->val.oper = '+';                       \
-    new->parent->right = new;                          \
-    new->parent->left = NULL;                          \
-    new->right = NULL;                                 \
-    new->left = NULL;                                  \
-    if (tmp->type == 1)                                \
-    {                                                  \
-        new->val.value = tmp->val.value;               \
-        new->type = 1;                                 \
-    }                                                  \
-    else                                               \
-    {                                                  \
-        new->val.oper = tmp->val.oper;                 \
-        new->type = 0;                                 \
-    }                                                  \
-    k++;
-
 void convertor(cell *tmp)
 {
-    int mnoj;
-    if (tmp->parent && (tmp->parent->type == 1 || (tmp->parent->type == 0 && ((tmp->parent->val.oper > 64 && tmp->parent->val.oper < 91) || (tmp->parent->val.oper > 96 && tmp->parent->val.oper < 123)))) && tmp->type == 0 && tmp->val.oper == '*' && tmp->right)
+    if (!tmp->left)
     {
-        if (tmp->right->type == 1 && tmp->right->val.value > 0)
-        {
-            if (!tmp->right->right && !tmp->right->left)
+        if (!tmp->right)
+            return;
+        else
+            convertor(tmp->right);
+        return;
+    }
+    if ((tmp->left) && (!tmp->left->right))
+    {
+        convertor(tmp->right);
+        return;
+    }
+    if ((tmp->left) && (tmp->left->right))
+    {
+        if (((tmp->left->val.oper) == '*') && ((tmp->type) == 1) && ((tmp->left->right->type) == 0))
             {
-                if (tmp->left)
+                int c = tmp->val.value;
+                tmp->val.oper = tmp->left->right->val.oper;
+                tmp->left->right->val.value = c;
+                tmp->type = 0;
+                tmp->left->right->type = 1;
+                convertor(tmp);
+            }
+        if (((tmp->left->val.oper) == '*') && ((tmp->type) == 0) && ((tmp->left->right->type) == 1) && ((!tmp->left->right->left) || (tmp->left->right->left->val.oper != '*')))
+        {
+            int k = (tmp->left->right->val.value);
+            for (int i = 0; i < k; i++)
+            {
+                if (tmp->left->right->val.value != 1)
                 {
-                    mnoj = tmp->right->val.value;
-                    cell *del, *del1;
-                    del = tmp;
-                    del1 = del->right;
-                    tmp = tmp->parent;
-                    tmp->left->left->parent = tmp;
-                    tmp->left = tmp->left->left;
-                    free(del);
-                    free(del1);
-                }
-                else
-                {
-                    mnoj = tmp->right->val.value;
-                    tmp = tmp->parent;
-                    free(tmp->left->right);
-                    free(tmp->left);
-                    tmp->left = NULL;
-                }
-                cell *present = tmp, *down = tmp, *new, *help;
-                if (tmp->right)
-                {
-                    down = tmp->right;
-                }
-                int k = 0;
-                if (mnoj > 1)
-                {
-                    Cret(new, cell);
-                    Cret(new->parent, cell);
-                    new->parent->type = 0;
-                    new->parent->parent = NULL;
-                    new->parent->val.oper = '+';
-                    new->parent->right = new;
-                    new->parent->left = NULL;
-                    new->right = NULL;
-                    new->left = NULL;
-                    if (tmp->type == 1)
+                    if (tmp->right)
                     {
-                        new->val.value = tmp->val.value;
-                        new->type = 1;
+                        cell *remember = tmp;
+                        cell *moving;
+                        Cret(moving, cell);
+                        moving->parent = NULL;
+                        moving->right = tmp->right->right;
+                        moving->left = NULL;
+                        moving->type = tmp->right->type;
+                        moving->val = tmp->right->val;
+                        while ((tmp->right) && (tmp->right->right))
+                        {
+                            Cret(moving->right, cell);
+                            moving->right->parent = moving;
+                            moving = moving->right;
+                            tmp = tmp->right;
+                            moving->right = tmp->right->right;
+                            moving->left = NULL;
+                            moving->type = tmp->right->type;
+                            moving->val = tmp->right->val;
+                        }
+                        while (moving->parent)
+                            moving = moving->parent;
+                        tmp = remember;
+                        if (!tmp->right->right)
+                        {
+                            Cret(tmp->right->right, cell);
+                            tmp->right->right->parent = tmp->right;
+                            Cret(tmp->right->right->right, cell);
+                        }
+                        if ((tmp->right->right) && (!tmp->right->right->right))
+                            Cret(tmp->right->right->right, cell);
+                        tmp->right->right->right = moving;
+                        tmp->right->right->right->parent = tmp->right->right;
+                        tmp->right->left = tmp->right->right->left = NULL;
+                        tmp->right->type = tmp->right->right->type = tmp->left->type;
+                        tmp->right->val.oper = '+';
+                        tmp->right->right->val.oper = tmp->val.oper;
+                        (tmp->left->right->val.value)--;
                     }
                     else
                     {
-                        new->val.oper = tmp->val.oper;
-                        new->type = 0;
+                        Cret(tmp->right, cell);
+                        tmp->right->parent = tmp;
+                        tmp->right->right = NULL;
+                        tmp->right->left = NULL;
+                        tmp->right->type = 0;
+                        tmp->right->val.oper = '+';
+                        Cret(tmp->right->right, cell);
+                        tmp->right->right->parent = tmp->right;
+                        tmp->right->right->left = NULL;
+                        tmp->right->right->right = NULL;
+                        tmp->right->right->type = 0;
+                        tmp->right->right->val.oper = tmp->val.oper;
+                        (tmp->left->right->val.value)--;
                     }
-                    help = new;
-                    while (k < mnoj - 2)
-                    {
-                        new = help;
-                        new_br(new);
-                        help = new;
-                    }
-                    while (new->parent)
-                    {
-                        new = new->parent;
-                    }
-                    tmp->right = new;
-                    new->parent = tmp;
-                    while (new->right)
-                    {
-                        new = new->right;
-                    }
-                    if (down != tmp)
-                    {
-                        down->parent = new;
-                        new->right = down;
-                    }
+                }
+                else
+                {
+                    free(tmp->left->right);
+                    free(tmp->left);
+                    tmp->left = NULL;
+                    k = 0;
                 }
             }
         }
     }
     if (tmp->left)
-    {
         convertor(tmp->left);
-    }
     if (tmp->right)
-    {
         convertor(tmp->right);
-    }
     return;
 }

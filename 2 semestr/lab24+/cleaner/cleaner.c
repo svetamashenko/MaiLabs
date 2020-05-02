@@ -23,6 +23,7 @@ void clean(cell *tmp)
         clean(tmp->right);
     }
     free(tmp);
+    return;
 }
 
 void clean_tree(cell *tmp)
