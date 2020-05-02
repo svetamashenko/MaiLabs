@@ -75,10 +75,7 @@ void convertor(cell *tmp)
                         Cret(tmp->right->right->right, cell);
                     tmp->right->right->right = moving;
                     tmp->right->right->right->parent = tmp->right->right;
-                    if (tmp->left->left)
-                        tmp->right->left = tmp->left->left;
-                    else
-                        tmp->right->left = NULL;
+                    tmp->right->left = NULL;
                     tmp->right->type = tmp->right->right->type = tmp->left->type;
                     tmp->right->val.oper = '+';
                     tmp->right->right->val.oper = tmp->val.oper;
