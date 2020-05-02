@@ -32,9 +32,28 @@ void convertor(cell *tmp)
             {
                 if (tmp->right)
                 {
-                    cell* right;
-                    Cret(right, cell);
-                    right = tmp->right;
+                    cell *remember = tmp;
+                    cell *moving;
+                    Cret(moving, cell);
+                    moving->parent = NULL;
+                    moving->right = tmp->right->right;
+                    moving->left = tmp->right->left;
+                    moving->type = tmp->right->type;
+                    moving->val = tmp->right->val;
+                    while ((tmp->right) && (tmp->right->right))
+                    {
+                        Cret(moving->right, cell);
+                        moving->right->parent = moving;
+                        moving = moving->right;
+                        tmp = tmp->right;
+                        moving->right = tmp->right->right;
+                        moving->left = tmp->right->left;
+                        moving->type = tmp->right->type;
+                        moving->val = tmp->right->val;
+                    }
+                    while (moving->parent)
+                        moving = moving->parent;
+                        tmp = remember;
                     if ((!tmp->right->right) && (!tmp->right->right->right))
                     {
                         Cret(tmp->right->right, cell);
@@ -42,16 +61,17 @@ void convertor(cell *tmp)
                     }
                     if ((tmp->right->right) && (!tmp->right->right->right))
                         Cret(tmp->right->right->right, cell);
-                    tmp->right->right->right = right;
+                    tmp->right->right->right = moving;
                     tmp->right->right->right->parent = tmp->right->right;
                     if (tmp->left->left)
                         tmp->right->left = tmp->left->left;
                     else
                         tmp->right->left = NULL;
-                    tmp->right->type = tmp->left->type;
+                    tmp->right->type = tmp->right->right->type = tmp->left->type;
                     tmp->right->val.oper = '+';
                     tmp->right->right->val.oper = tmp->val.oper;
                     (tmp->left->right->val.value)--;
+                    free(moving);
                 }
                 else
                 {
@@ -82,7 +102,7 @@ void convertor(cell *tmp)
         convertor(tmp->left);
     if (tmp->right)
         convertor(tmp->right);
-        return;
+    return;
 }
 
 void cleaner(cell *tmp)
