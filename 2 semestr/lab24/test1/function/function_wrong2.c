@@ -32,26 +32,18 @@ void convertor(cell *tmp)
             {
                 if (tmp->right)
                 {
-                    int *right = &(tmp->right->right);
-                    int *left = &(tmp->right->left);
-                    int type = tmp->right->type;
-                    int val1 = tmp->val.value;
-                    int val0 = tmp->val.oper;
+                    cell* right;
+                    Cret(right, cell);
+                    right = tmp->right;
                     if ((!tmp->right->right) && (!tmp->right->right->right))
                     {
                         Cret(tmp->right->right, cell);
                         Cret(tmp->right->right->right, cell);
                     }
                     if ((tmp->right->right) && (!tmp->right->right->right))
-                    {
                         Cret(tmp->right->right->right, cell);
-                    }
-                    tmp->right->right->right->right = right;
+                    tmp->right->right->right = right;
                     tmp->right->right->right->parent = tmp->right->right;
-                    tmp->right->right->right->left = left;
-                    tmp->right->right->right->type = type;
-                    tmp->right->right->right->val.oper = val0;
-                    tmp->right->right->right->val.value = val1;
                     if (tmp->left->left)
                         tmp->right->left = tmp->left->left;
                     else
@@ -90,6 +82,7 @@ void convertor(cell *tmp)
         convertor(tmp->left);
     if (tmp->right)
         convertor(tmp->right);
+        return;
 }
 
 void cleaner(cell *tmp)

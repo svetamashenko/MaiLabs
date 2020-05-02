@@ -50,7 +50,7 @@ int main()
         case 2:
         {
             getchar();
-            func(root_tmp);
+            convertor(root_tmp);
             printf("\n");
         }
         break;
@@ -64,7 +64,7 @@ int main()
         case 4:
         {
             getchar();
-            tree_out(root_tmp, 1);
+            text_out(root_tmp, 1);
             printf("\n");
         }
         break;

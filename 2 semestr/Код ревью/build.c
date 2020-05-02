@@ -1,7 +1,20 @@
 #include <stdio.h>
-#include "builder.h"
+#include "build.h"
 #include <malloc.h>
-#include "../data.h"
+#include "data.h"
+
+enum TYPES //Вместо 0 и 1 в типах используйте enum
+{
+    CHAR = 0,
+    INT = 1
+};
+// это выполняется много раз, делайте через функцию
+//       tmp->parent = NULL;
+//        tmp->left = NULL;
+//        tmp->right = NULL;
+//        tmp->type = INT;
+
+//уберите ужасные #define везде, код невозможно читать
 #define Cret(tmp, type)                 \
     tmp = (type *)malloc(sizeof(type)); \
     if (!tmp)                           \
@@ -16,9 +29,9 @@ cell *add_int(int value, cell *tmp)
     {
         Cret(tmp, cell);
         tmp->parent = NULL;
-        tmp->left = NULL;
+        tmp->left = NULL;//Повторение с разными параметрами
         tmp->right = NULL;
-        tmp->type = 1;
+        tmp->type = INT;
         tmp->val.value = value;
         return tmp;
     }
@@ -26,9 +39,9 @@ cell *add_int(int value, cell *tmp)
     {
         Cret(tmp->right, cell);
         tmp->right->val.value = value;
-        tmp->right->right = NULL;
+        tmp->right->right = NULL;//Повторение с разными параметрами
         tmp->right->left = NULL;
-        tmp->right->type = 1;
+        tmp->right->type = INT;
         tmp->right->parent = tmp;
         return tmp->right;
     }
@@ -41,27 +54,28 @@ cell *add_char(char sign, cell *tmp)
         Cret(tmp, cell);
         tmp->parent = NULL;
         tmp->left = NULL;
-        tmp->right = NULL;
-        tmp->type = 0;
+        tmp->right = NULL;//Повторение с разными параметрами
+        tmp->type = CHAR;
         tmp->val.oper = sign;
         return tmp;
     }
     else
     {
 
-        if ((sign == '*') || (sign == '/') || (sign == '^'))
+        if ((sign == '*') || (sign == '/')  || (sign == '^'))
         {
             Cret(tmp->left, cell);
             tmp->left->val.oper = sign;
             tmp->left->right = NULL;
             tmp->left->left = NULL;
-            tmp->left->type = 0;
+            tmp->left->type = CHAR;
             tmp->left->parent = tmp;
-            return tmp->left;
+            return tmp->left;//Повторение с разными параметрами
         }
         else if ((sign == '+') || (sign == '-'))
         {
-            while (((tmp->parent) != NULL) && (!(tmp->left) || (tmp->right)) && !(tmp->val.oper == '(' && tmp->type == 0))
+            while (((tmp->parent) != NULL) && (!(tmp->left) || (tmp->right)) &&
+                  !(tmp->val.oper == '(' && tmp->type == CHAR))
             {
                 tmp = tmp->parent;
             }
@@ -73,37 +87,17 @@ cell *add_char(char sign, cell *tmp)
             tmp->right->val.oper = sign;
             tmp->right->right = NULL;
             tmp->right->left = NULL;
-            tmp->right->type = 0;
+            tmp->right->type = CHAR;//Повторение с разными параметрами
             tmp->right->parent = tmp;
             return tmp->right;
-        }
-        else if (sign == ')')
-        {
-            while ((tmp->val.oper) != '(')
-                tmp = tmp->parent;
-            while (tmp->right)
-                tmp = tmp->right;
-            Cret(tmp->right, cell);
-            tmp->right->val.oper = sign;
-            tmp->right->right = NULL;
-            tmp->right->left = NULL;
-            tmp->right->type = 0;
-            tmp->right->parent = tmp;
-            while ((tmp->val.oper) != '(')
-                tmp = tmp->parent;
-            if ((tmp->parent) && (tmp->parent->parent) && ((tmp->parent->val.oper == ('*')) || (tmp->parent->val.oper == ('/'))))
-                tmp = tmp->parent->parent;
-            while (tmp->right)
-                tmp = tmp->right;
-                return tmp;
         }
         else
         {
             Cret(tmp->right, cell);
             tmp->right->val.oper = sign;
             tmp->right->right = NULL;
-            tmp->right->left = NULL;
-            tmp->right->type = 0;
+            tmp->right->left = NULL;//Повторение с разными параметрами
+            tmp->right->type = CHAR;
             tmp->right->parent = tmp;
             return tmp->right;
         }
