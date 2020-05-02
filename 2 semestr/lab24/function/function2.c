@@ -21,7 +21,7 @@ void convertor(cell *tmp)
             convertor(tmp->right);
         return;
     }
-    if (!tmp->left->right)
+    else if (!tmp->left->right)
     {
         convertor(tmp->right);
         return;
