@@ -1,13 +1,31 @@
 #include <stdio.h>
 #include "../data.h"
-#include <math.h>
+#include "output.h"
 
-void text_out(cell *tmp, int space)
+void text_out(cell *tmp)
+{
+    if (tmp->type == 1)
+        printf("%d", tmp->val.value);
+    else
+        printf("%c", tmp->val.oper);
+    if (tmp->left)
+    {
+        text_out(tmp->left);
+    }
+    
+    if (tmp->right)
+    {
+        text_out(tmp->right);
+    }
+    return;
+}
+
+void tree_out(cell *tmp, int space)
 {
     int i = space;
     if (tmp->right)
     {
-        text_out(tmp->right, space + 1);
+        tree_out(tmp->right, space + 1);
     }
     while (i > 0)
     {
@@ -21,6 +39,6 @@ void text_out(cell *tmp, int space)
     i -= 1;
     if (tmp->left)
     {
-        text_out(tmp->left, space + 1);
+        tree_out(tmp->left, space + 1);
     }
 }

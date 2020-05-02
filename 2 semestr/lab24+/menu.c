@@ -4,7 +4,7 @@
 #include "data.h"
 #include "function/function.h"
 #include "parse_exp/parse.h"
-#include "output/tree_output.h"
+#include "output/output.h"
 #include "cleaner/cleaner.h"
 
 int menu(void)
@@ -57,14 +57,14 @@ int main()
         case 3:
         {
             getchar();
-            //text_out(root_tmp);
+            text_out(root_tmp);
             printf("\n");
         }
         break;
         case 4:
         {
             getchar();
-            text_out(root_tmp, 1);
+            tree_out(root_tmp, 1);
             printf("\n");
         }
         break;

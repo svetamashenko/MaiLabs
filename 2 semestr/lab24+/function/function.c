@@ -103,8 +103,7 @@ void convertor(cell *tmp)
                 }
                 else
                 {
-                    free(tmp->left->right);
-                    free(tmp->left);
+                    clean(tmp->left);
                     tmp->left = NULL;
                     k = 0;
                 }
