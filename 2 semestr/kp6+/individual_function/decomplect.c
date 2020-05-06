@@ -2,6 +2,7 @@
 #include "decomplect.h"
 #include "../re_builder/re_builder.h"
 #include "../data.h"
+#include <malloc.h>
 #define Cret(tmp, type)                 \
     tmp = (type *)malloc(sizeof(type)); \
     if (!tmp)                           \
@@ -20,16 +21,15 @@ void function(select_type *computer)
         if (uncomp->last)
             uncomp = uncomp->last;
         print_new(uncomp);
+        if (uncomp->last)
+            uncomp = uncomp->last;
         cleaner(uncomp);
     }
 }
 
 void print_new(select_type *tmp)
 {
-    EMPT(tmp);
-    printf("%20s %9s %8s %6s %8s %10s", "Family", "CPU count", "CPU type", "memory"
-                                                                           "GPU type",
-           "GPU memory");
+    printf("%20s %9s %8s %6s %8s %10s", "Family", "CPU count", "CPU type", "memory", "GPU type", "GPU memory");
     printf("%8s %10s %9s %11s %11s %20s\n", "HDD type", "HDD memory", "HDD count", "dcs control", "blt control", "OC");
     for (;;)
     {
@@ -59,4 +59,14 @@ void print_new(select_type *tmp)
         }
     }
     return;
+}
+
+void cleaner(select_type *tmp)
+{
+    while (tmp->next)
+    {
+        tmp = tmp->next;
+        free(tmp->last);
+    }
+    free(tmp);
 }
