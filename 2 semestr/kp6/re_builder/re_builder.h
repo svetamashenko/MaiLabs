@@ -2,6 +2,6 @@
 #define RE_BUILDER_H
 #include "../data.h"
 
-select_type *re_build(select_type, select_type*);
+info_pc *re_build(info_pc, info_pc*);
 
 #endif
