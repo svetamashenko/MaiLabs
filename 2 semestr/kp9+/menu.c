@@ -29,8 +29,10 @@ int main()
         {
         case 1:
         {
-
-            while (!EOF)
+            char strings[100];
+            float code;
+            FILE *file = fopen("test2.txt", "r");
+            while (fscanf(file, "%[^\n]s%s%f", &strings, &code) != EOF)
             {
                 size += 1;
                 table = (row *)realloc(table, size * sizeof(row));
@@ -40,13 +42,9 @@ int main()
                     printf("Out of memory\n");
                     break;
                 }
-                printf("Enter a string: ");
-                getchar();
-                scanf("%[^\n]s", &(table[size - 1].string));
-                printf("Enter a key: ");
-                getchar();
-                scanf("%f", &(table[size - 1].key));
-                printf("\n");
+                for (int i = 0; i < 100; i++)
+                    table[size - 1].string[i] = strings[i];
+                (table[size - 1].key) = code;
             }
         }
         break;
