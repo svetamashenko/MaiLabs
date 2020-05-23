@@ -1,11 +1,23 @@
-%% AMS-LaTeX Created with the Wolfram Language for Students - Personal Use 
-%  Only : 
-\documentclass[12pt,a4paper]
-\usepackage[utf8]{inputenc}
-\usepackage[russian]{babel}
-\usepackage{graphicx}
-\usepackage{amsmath}
-\begin{document}
-Здравствуй, Мир!!!
-\end{document}
+\documentclass[oneside,final,12pt]{extreport}
+\usepackage[utf8x]{inputenc}
+\usepackage[russianb]{babel}
+\usepackage{vmargin}
+\usepackage{indentfirst}
+\linespread{0.6}
+\setpapersize{A5}
+\setmarginsrb{2cm}{1.5cm}{1cm}{1.5cm}{0pt}{0mm}{0pt}{13mm}
+\setcounter{page}{150}
 
+\usepackage{fancyhdr} 
+\fancypagestyle{plain}{ 
+    \fancyhf{}
+    \rhead{\thepage}}
+\pagestyle{fancy}
+\fancyhead[RE,LO]
+
+\begin{document}
+\newcounter{page}{150}
+\input{page1}
+\input{page2}
+\rmfamily
+\end{document}
