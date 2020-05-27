@@ -2,21 +2,24 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[russianb]{babel}
 \usepackage{vmargin}
+\usepackage{soul}
 \usepackage{indentfirst}
-\linespread{0.6}
+\linespread{1}
 \setpapersize{A5}
 \setmarginsrb{2cm}{1.5cm}{1cm}{1.5cm}{0pt}{0mm}{0pt}{13mm}
-\setcounter{page}{150}
+\setcounter{page}{\textit{150}}
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
 
 \usepackage{fancyhdr} 
 \fancypagestyle{plain}{ 
     \fancyhf{}
     \rhead{\thepage}}
+\fancyfoot{}
 \pagestyle{fancy}
-\fancyhead[RE,LO]
+\fancyhead[R,L]
 
 \begin{document}
-\newcounter{page}{150}
 \input{page1}
 \input{page2}
 \rmfamily

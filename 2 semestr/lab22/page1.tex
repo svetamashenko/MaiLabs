@@ -1,7 +1,29 @@
 \footnotesize
-\pagenumbering{\itarabic}
-\textit{Глава 10}\\
-\linespread{1}\\
-Доказательство. \begin{math}f^{(n-1)}(x)\end{math} существует при \begin{math}|x-\xi|<\epsilon\end{math}
-\newlineдля некоторого \begin{math}\epsilon>0\end{math}. Тогда из теорем 177 и 178 ( с заме-
-\\ной n на n-1) следует, что при \begin{math}0<|h|<\epsilon\end{math} между \begin{math}\end{math}
+\fancyhead[C]{\itГлава 10}
+\linespread{1}
+\normalsize
+\par\text{Д\thispace\thinspaceо\thispace\thinspaceк\thispace\thinspaceа\thispace\thinspaceз\thispace\thinspaceа\thispace\thinspaceт\thispace\thinspaceе\thispace\thinspaceл\thispace\thinspaceь\thispace\thinspaceс\thispace\thinspaceт\thispace\thinspaceв\thispace\thinspaceо.}
+$f^{(n-1)}(x)$ существует при $|x-\xi|<\epsilon$ для некоторо $\epsilon>0$. Тогда из теорем $177$ и $178$ ( с заменой $n$ на $n-1$) следует, что при $0<|h|<\epsilon$ между $\xi$ и $\xi+h$ имеется $y$, такое, что:
+\begin{equation}\label{formula1}
+f(\xi+h)-f(\xi)=\frac{h^{n-1}}{(n-1)!}f^{(n-1)}(y).
+\end{equation}
+$f^{n-1}(x)$ возрастает, соответственно убывает, в $\xi$, смотря по тому, будет ли $f^n(\xi)>0$, соответственно $<0$. Следовательно, существует $\epsilon_1, 0<\epsilon_1<\epsilon$, такое, что при $0<|h|<\epsilon_1$ для всех $y$ между $\xi$ и $\xi+h$ выполняется неравенство
+\begin{equation}\label{formula2}
+hf^{n-1}(y)f^n(\xi)>0.
+\end{equation}
+Поэтому из (1) имеем при $0<|h|<\xi_1$, с тамошним y
+\begin{center}$h^{n}f^{(n)}(f(\xi+h)-f(\xi))=(\frac{(h''-1)^2}{(n-1)!}hf^{(n-1)}(y)f^{(n)}(\xi)>0$.\end{center}
+Следовательно,
+\par1) Если $n$ четное и $f^{(n)}(\xi)>0$, то
+\begin{center}$f(\xi+h)-f(\xi)>0$.\end{center}
+\par2) Если $n$ четное и $f^{(n)}(\xi)<0$, то
+\begin{center}$f(\xi+h)-f(\xi)<0$.\end{center}
+\par3) Если $n$ нечетное и $f^{(n)}(\xi)>0$, то
+\begin{center}$h(f(\xi+h)-f(\xi))>0$.\end{center}
+\par4) Если $n$ нечетное и $f^{(n)}(\xi)<0$, то
+\begin{center}$h(f(\xi+h)-f(\xi))>0$.\end{center}
+Примеры \RomanNumeralCaps{1})-\RomanNumeralCaps{4}) --- те же, что и в конце гл. 7.\\
+\RomanNumeralCaps{1}) $f(x)=-x^2$, $f'(0)=0$, $f''(0)=-2<0$: максимум в 0.\\
+\RomanNumeralCaps{2}) $f(x)=-x^2$, $f'(0)=0$, $f''(0)=-2<0$: минимум в 0.\\
+\RomanNumeralCaps{3}) $f(x)=-x^3$, $f'(0)=0$, $f''(0)=0$, $f'''(0)=6>0$: возрастание в 0.\\
+\newpage
