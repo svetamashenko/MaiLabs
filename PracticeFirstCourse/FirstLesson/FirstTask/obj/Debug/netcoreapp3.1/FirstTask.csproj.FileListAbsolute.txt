@@ -1,0 +1,13 @@
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\obj\Debug\netcoreapp3.1\FirstTask.csprojAssemblyReference.cache
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\obj\Debug\netcoreapp3.1\FirstTask.AssemblyInfoInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\obj\Debug\netcoreapp3.1\FirstTask.AssemblyInfo.cs
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\obj\Debug\netcoreapp3.1\FirstTask.csproj.CoreCompileInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\bin\Debug\netcoreapp3.1\FirstTask.exe
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\bin\Debug\netcoreapp3.1\FirstTask.deps.json
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\bin\Debug\netcoreapp3.1\FirstTask.runtimeconfig.json
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\bin\Debug\netcoreapp3.1\FirstTask.runtimeconfig.dev.json
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\bin\Debug\netcoreapp3.1\FirstTask.dll
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\bin\Debug\netcoreapp3.1\FirstTask.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\obj\Debug\netcoreapp3.1\FirstTask.dll
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\obj\Debug\netcoreapp3.1\FirstTask.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\PracticeFirstCourse\FirstLesson\FirstTask\obj\Debug\netcoreapp3.1\FirstTask.genruntimeconfig.cache
