@@ -26,7 +26,7 @@ namespace SecondTask
                         Console.WriteLine(s.Trim(',', ' ') + '.');
                         break;
                     case 3:
-                        Console.WriteLine(FindVolume(GetArray()) + '.');
+                        Console.WriteLine(FindVolume(GetArray()));
                         break;
                     case 4:
                         Console.WriteLine("Goodbye, User!");
@@ -120,8 +120,29 @@ namespace SecondTask
             }
             return array;
         }
-        public static int FindVolume(int[] list){
-            
+        public static int FindVolume(int[] list)
+        {
+            int First = -1, Second = -2, idFirst = -1, idSecond = -1;
+            for (int i = 0; i < list.Length; i++)
+            {
+                if (list[i] > First)
+                {
+                    idSecond = idFirst;
+                    idFirst = i;
+                    Second = First;
+                    First = list[i];
+                }
+                if (((list[i] < First) && (list[i] > Second) || ((idSecond < i) && (Second == list[i]) || ((list[i] == First) && (idFirst < i)))))
+                {
+                    idSecond = i;
+                    Second = list[i];
+                }
+            }
+            int pool = Second * (idSecond - idFirst - 1);
+            System.Console.WriteLine(pool + " " + Second + " " + idFirst + " " + idSecond);
+            for (int j = idFirst + 1; j < idSecond; j++)
+                pool = pool - list[j];
+            return pool;
         }
     }
 }
