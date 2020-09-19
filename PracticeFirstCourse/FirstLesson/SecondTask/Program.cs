@@ -10,7 +10,6 @@ namespace SecondTask
             while (Key != 4)
             {
                 Key = Menu();
-                int lenght = 0;
                 switch (Key)
                 {
                     case 1:
