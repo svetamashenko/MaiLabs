@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_1._2_lab</RootNamespace>
+    <RootNamespace>lab2._2</RootNamespace>
   </PropertyGroup>
 
 </Project>
