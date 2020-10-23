@@ -84,9 +84,9 @@ namespace lab4
         }
         private void void_func()
         {
-            System.Console.WriteLine($"расширение (value = {new_value})");
+            System.Console.WriteLine($"расширение (новый множитель = {multiplier})");
         } 
-        private int new_value = 100;
+        private int multiplier = 100;
         protected override void B_func()
         {
             System.Console.WriteLine("и специализация");
