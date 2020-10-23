@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lab6
+namespace lab6
 {
     class Program
     {
@@ -84,8 +84,6 @@ namespace Lab6
             }
             return c_array[posit];
         }
-
-
         public void set_A(A new_a)
         {
             if (a == null || (a != null && a.GetHashCode() != new_a.GetHashCode()))
@@ -108,7 +106,6 @@ namespace Lab6
 
         }
         public A get_A() => a;
-
     } // 1 B : N C ; 1 B : 1 A
     class C : S
     {

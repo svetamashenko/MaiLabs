@@ -1,0 +1,13 @@
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\bin\Debug\netcoreapp3.1\lab7.exe
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\bin\Debug\netcoreapp3.1\lab7.deps.json
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\bin\Debug\netcoreapp3.1\lab7.runtimeconfig.json
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\bin\Debug\netcoreapp3.1\lab7.runtimeconfig.dev.json
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\bin\Debug\netcoreapp3.1\lab7.dll
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\bin\Debug\netcoreapp3.1\lab7.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\obj\Debug\netcoreapp3.1\lab7.csprojAssemblyReference.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\obj\Debug\netcoreapp3.1\lab7.AssemblyInfoInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\obj\Debug\netcoreapp3.1\lab7.AssemblyInfo.cs
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\obj\Debug\netcoreapp3.1\lab7.csproj.CoreCompileInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\obj\Debug\netcoreapp3.1\lab7.dll
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\obj\Debug\netcoreapp3.1\lab7.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab7\obj\Debug\netcoreapp3.1\lab7.genruntimeconfig.cache

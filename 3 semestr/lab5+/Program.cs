@@ -9,35 +9,35 @@ namespace lab5
             B b = new B();
             D d = new D();
             
-            b.func_1();
-            d.func_1();
-            d.func_2();
+            b.function_A();
+            d.function_A();
+            d.function_C();
         }
     }
     interface A
     {
-        void func_1();
+        void function_A();
     }
     class B : A
     {
-        public virtual void func_1()
+        public virtual void function_A()
         {
-            System.Console.WriteLine("Func_1");
+            System.Console.WriteLine("Function A");
         }
     }
     interface C : A
     {
-        void func_2();
+        void function_C();
     }
     class D : B, C
     {
-        public override void func_1()
+        public override void function_A()
         {
             System.Console.Write("That`s override ");
-            base.func_1();
+            base.function_A();
         }
-        public void func_2(){
-            System.Console.WriteLine("Func_2");
+        public void function_C(){
+            System.Console.WriteLine("Function_C");
         } 
     }
 }
