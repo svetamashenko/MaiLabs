@@ -1,0 +1,9 @@
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab10\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\WindowsFormsApp10.exe.config
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab10\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\WindowsFormsApp10.exe
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab10\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\WindowsFormsApp10.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab10\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.csprojAssemblyReference.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab10\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.Properties.Resources.resources
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab10\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.csproj.GenerateResource.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab10\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.csproj.CoreCompileInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab10\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.exe
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab10\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.pdb

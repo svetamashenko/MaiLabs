@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\1 lab\\1 lab.csproj",
+      "projectUniqueName": "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\lab1.1+\\1 lab.csproj",
       "projectName": "1 lab",
-      "projectPath": "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\1 lab\\1 lab.csproj",
+      "projectPath": "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\lab1.1+\\1 lab.csproj",
       "packagesPath": "C:\\Users\\UltraUser\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\1 lab\\obj\\",
+      "outputPath": "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\lab1.1+\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

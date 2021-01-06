@@ -1,0 +1,10 @@
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab14\lab14\lab14\obj\Debug\lab14.csprojAssemblyReference.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab14\lab14\lab14\obj\Debug\lab14.Form1.resources
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab14\lab14\lab14\obj\Debug\lab14.Properties.Resources.resources
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab14\lab14\lab14\obj\Debug\lab14.csproj.GenerateResource.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab14\lab14\lab14\obj\Debug\lab14.csproj.CoreCompileInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab14\lab14\lab14\bin\Debug\lab14.exe.config
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab14\lab14\lab14\bin\Debug\lab14.exe
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab14\lab14\lab14\bin\Debug\lab14.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab14\lab14\lab14\obj\Debug\lab14.exe
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\lab14\lab14\lab14\obj\Debug\lab14.pdb

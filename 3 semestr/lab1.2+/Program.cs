@@ -7,70 +7,208 @@ namespace Lab1_2
     {
         static void Main(string[] args)
         {
-            Graph A = new Graph(1);
-            Graph B = new Graph(2);
-            Graph C = new Graph(3);
-            Graph J = new Graph(4);
+            Graph_J J = new Graph_J(4);
+            Graph_K K = new Graph_K(5);
+            Graph_D D = new Graph_D(6);
+            Graph_E E = new Graph_E(7);
+            Graph_F F = new Graph_F(8);
+            
+            Graph_B B = new Graph_B(K, D, 2);
+            Graph_C C = new Graph_C(E, F, 3);
+
+            Graph_A A = new Graph_A(B, C, J, 1);
 
             System.Console.WriteLine($"1 A");
-            A.Add(B);
-            A.MoveTo(B,'B');
-            A.Add(C);
-            A.MoveTo(C,'C');
-            A.Add(J);
-            A.MoveTo(J,'J');
-
-            Graph K = new Graph(5);
-            Graph D = new Graph(6);
-
-            B.Add(K);
-            A.MoveTo(K,'K');
-            B.Add(D);
-            A.MoveTo(D,'D');
-
-            Graph E = new Graph(7);
-            Graph F = new Graph(8);
-
-            C.Add(E);
-            A.MoveTo(E,'E');
-            C.Add(F);
-            A.MoveTo(F,'F');
+            A.MoveTo('B');
+            A.MoveTo('C');
+            A.MoveTo('J');
+            A.MoveTo('K');
+            A.MoveTo('D');
+            A.MoveTo('E');
+            A.MoveTo('F');
         }
     }
-
-    class Graph
+    class Graph_A
     {
         private int Value;
-        private List<Graph> Childs;
-        public void Add(Graph new_child)
+        private Graph_B B = null;
+        private Graph_C C = null;
+        private Graph_J J = null;
+
+        public Graph_A(Graph_B _B, Graph_C _C, Graph_J _J, int value)
         {
-            Childs.Add(new_child);
-        }
-        public Graph(int value)
-        {
-            Childs = new List<Graph>();
             Value = value;
+            B = _B;
+            C = _C;
+            J = _J;
         }
-        public void MoveTo(Graph gr, char ch)
+        ~Graph_A()
+        {
+        }
+        public void MoveTo(char name)
         {
             System.Console.Write($"{Value} => ");
-            foreach (Graph k in Childs)
+            if (name == 'B' || name == 'K' || name == 'D')
             {
-                if (k.Value == gr.Value)
-                {
-                    System.Console.WriteLine($"{k.Value} {ch}");
-                    return;
-                }
-                foreach (Graph h in k.Childs)
-                {
-                    if (h.Value == gr.Value)
-                    {
-                        System.Console.WriteLine($"{k.Value} => {h.Value} {ch}");
-                        return;
-                    }
-                }
+                this.B.MoveTo(name);
+            }
+            else if (name == 'J')
+            {
+                this.J.MoveTo(name);
+            }
+            else
+            {
+                this.C.MoveTo(name);
             }
 
         }
     }
+    class Graph_B
+    {
+        private int Value;
+        private Graph_K K = null;
+        private Graph_D D = null;
+
+        public Graph_B(Graph_K _K, Graph_D _D, int value)
+        {
+            Value = value;
+            K = _K;
+            D = _D;
+        }
+        ~Graph_B()
+        {
+        }
+        public void MoveTo(char name)
+        {
+            if (name == 'K')
+            {
+                System.Console.Write($"{Value} => ");
+                this.K.MoveTo(name);
+            }
+            else if (name == 'D')
+            {
+                System.Console.Write($"{Value} => ");
+                this.D.MoveTo(name);
+            }
+            else
+            {
+                System.Console.WriteLine($"{Value} B");
+            }
+        }
+    }
+    class Graph_C
+    {
+        private int Value;
+        private Graph_E E = null;
+        private Graph_F F = null;
+
+        public Graph_C(Graph_E _E, Graph_F _F, int value)
+        {
+            Value = value;
+            E = _E;
+            F = _F;
+        }
+        ~Graph_C()
+        {
+        }
+        public void MoveTo(char name)
+        {
+            if (name == 'E')
+            {
+                System.Console.Write($"{Value} => ");
+                this.E.MoveTo(name);
+            }
+            else if (name == 'F')
+            {
+                System.Console.Write($"{Value} => ");
+                this.F.MoveTo(name);
+            }
+            else
+            {
+                System.Console.WriteLine($"{Value} C");
+            }
+        }
+    }
+    class Graph_J
+    {
+        private int Value;
+
+        public Graph_J(int value)
+        {
+            Value = value;
+        }
+        ~Graph_J()
+        {
+        }
+        public void MoveTo(char name)
+        {
+            System.Console.WriteLine($"{Value} J");
+        }
+    }
+    class Graph_K
+    {
+        private int Value;
+
+        public Graph_K(int value)
+        {
+            Value = value;
+        }
+        ~Graph_K()
+        {
+        }
+        public void MoveTo(char name)
+        {
+            System.Console.WriteLine($"{Value} K");
+        }
+    }
+    class Graph_D
+    {
+        private int Value;
+
+        public Graph_D(int value)
+        {
+            Value = value;
+        }
+        ~Graph_D()
+        {
+        }
+        public void MoveTo(char name)
+        {
+            System.Console.WriteLine($"{Value} D");
+        }
+    }
+    class Graph_E
+    {
+        private int Value;
+
+        public Graph_E(int value)
+        {
+            Value = value;
+        }
+        ~Graph_E()
+        {
+        }
+        public void MoveTo(char name)
+        {
+            System.Console.WriteLine($"{Value} E");
+        }
+    }
+    class Graph_F
+    {
+        private int Value;
+
+        public Graph_F(int value)
+        {
+            Value = value;
+        }
+        ~Graph_F()
+        {
+        }
+        public void MoveTo(char name)
+        {
+            System.Console.WriteLine($"{Value} F");
+        }
+    }
+
+
 }

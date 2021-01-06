@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\1 task\\1 task.csproj": {}
+    "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\lab0+\\1 task.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\1 task\\1 task.csproj": {
+    "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\lab0+\\1 task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\1 task\\1 task.csproj",
+        "projectUniqueName": "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\lab0+\\1 task.csproj",
         "projectName": "1 task",
-        "projectPath": "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\1 task\\1 task.csproj",
+        "projectPath": "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\lab0+\\1 task.csproj",
         "packagesPath": "C:\\Users\\UltraUser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\1 task\\obj\\",
+        "outputPath": "C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\lab0+\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
