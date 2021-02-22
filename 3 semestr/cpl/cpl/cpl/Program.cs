@@ -4,13 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace coursepj
+namespace cpl
 {
-    /// <summary>
-    /// Главная точка входа для приложения.
-    /// </summary>
     static class Program
     {
+        /// <summary>
+        /// Главная точка входа для приложения.
+        /// </summary>
         [STAThread]
         static void Main()
         {
@@ -19,4 +19,4 @@ namespace coursepj
             Application.Run(new Form1());
         }
     }
-    }
+}

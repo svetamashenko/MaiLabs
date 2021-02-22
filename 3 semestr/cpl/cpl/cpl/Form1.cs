@@ -10,48 +10,23 @@ using System.Windows.Forms;
 
 namespace coursepj
 {
-
     public partial class Form1 : Form
     {
-
         int money;
-        private Bitmap hiImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-
         private Bitmap kpImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/lab13/kp.jpg");
         private Bitmap tgImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/lab13/tg.jpeg");
         private Bitmap obImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/lab13/ob.jpg");
         private Bitmap mcImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/lab13/mc.jpg");
         private Bitmap btImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/lab13/bt.jpg");
-
-        private Bitmap pushkImage = new Bitmap("C:\\Users\\UltraUser\\Программирование\\MaiLabs\\3 semestr\\courselab\\hi.jpg");
-        private Bitmap esenImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-        private Bitmap tsvetImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-        private Bitmap lermImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-        private Bitmap mayakImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-
-        private Bitmap comImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-        private Bitmap dramImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-        private Bitmap multImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-        private Bitmap prikImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-        private Bitmap meloImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-        private Bitmap trillImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-        private Bitmap fantImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-        private Bitmap screamImage = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/courselab/hi.jpg");
-
-
-        private Bitmap goodPhoto = new Bitmap("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/lab14/good.jpg");
-
         public Form1()
         {
             InitializeComponent();
-            pictureBox1.Image = (Image)hiImage;
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-        }
 
+
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pictureBox1.Visible = false;
             button1.Visible = false;
             label1.Visible = false;
             label2.Visible = true;
@@ -214,7 +189,7 @@ namespace coursepj
             label6.Visible = false;
             button4.Visible = true;
             label7.Visible = true;
-            panel1.Visible = true;
+            groupBox1.Visible = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -222,39 +197,38 @@ namespace coursepj
             int minus = 0;
             button4.Visible = false;
             label7.Visible = false;
-            panel1.Visible = false;
+            groupBox1.Visible = false;
             pictureBox3.Visible = true;
             label9.Visible = true;
             label8.Visible = true;
             button5.Visible = true;
-
             if (radioButton1.Checked == true)
             {
-                pictureBox3.Image = (Image)pushkImage;
+                //pictureBox3.Image = (Image);
                 label9.Text = "Музей А.С. Пушкина.";
                 minus = 250;
             }
             else if (radioButton2.Checked == true)
             {
-                pictureBox3.Image = (Image)esenImage;
+                //pictureBox3.Image = (Image);
                 label9.Text = "Музей С.А. Есенина.";
                 minus = 350;
             }
             else if (radioButton3.Checked == true)
             {
-                pictureBox3.Image = (Image)tsvetImage;
+                //pictureBox3.Image = (Image);
                 label9.Text = "Музей М.А. Цветаевой.";
                 minus = 300;
             }
             else if (radioButton4.Checked == true)
             {
-                pictureBox3.Image = (Image)lermImage;
+                //pictureBox3.Image = (Image);
                 label9.Text = "Музей М.Ю. Лермонтова.";
                 minus = 200;
             }
             else if (radioButton5.Checked == true)
             {
-                pictureBox3.Image = (Image)mayakImage;
+                //pictureBox3.Image = (Image);
                 label9.Text = "Музей В.В. Маяковского.";
                 minus = 300;
             }
@@ -272,88 +246,55 @@ namespace coursepj
             button5.Visible = false;
             button6.Visible = true;
             label10.Visible = true;
-            panel2.Visible = true;
+            groupBox2.Visible = true;
             if (radioButton6.Checked == true)
-                pictureBox4.Image = (Image)kpImage;//com
+                pictureBox4.Image = (Image)kpImage;
             else if (radioButton7.Checked == true)
-                pictureBox4.Image = (Image)kpImage;//dram
+                pictureBox4.Image = (Image)kpImage;
             else if (radioButton8.Checked == true)
-                pictureBox4.Image = (Image)trillImage;
+                pictureBox4.Image = (Image)kpImage;
             else if (radioButton9.Checked == true)
-                pictureBox4.Image = (Image)multImage;
+                pictureBox4.Image = (Image)kpImage;
             else if (radioButton10.Checked == true)
-                pictureBox4.Image = (Image)prikImage;
+                pictureBox4.Image = (Image)kpImage;
             else if (radioButton11.Checked == true)
-                pictureBox4.Image = (Image)meloImage;
+                pictureBox4.Image = (Image)kpImage;
             else if (radioButton12.Checked == true)
-                pictureBox4.Image = (Image)fantImage;
+                pictureBox4.Image = (Image)kpImage;
             else if (radioButton13.Checked == true)
-                pictureBox4.Image = (Image)screamImage;
+                pictureBox4.Image = (Image)kpImage;
             money -= 360;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            pictureBox4.Visible = true;
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             label10.Visible = false;
-            panel2.Visible = false;
+            groupBox2.Visible = false;
             label11.Text = "Ваш остаток: " + money + "Р";
             label12.Visible = true;
+            pictureBox4.Visible = true;
             button6.Visible = false;
             button7.Visible = true;
-
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            pictureBox4.Visible = false;
-            button7.Visible = false;
-            label12.Visible = false;
 
-            label11.Text = "Ваш остаток: " + money + "Р";
-
-            label13.Visible = true;
-
-            pictureBox4.Visible = true;
-            button9.Visible = true;
-            Invoker invoker = new Invoker();
-            Receiver receiver = new Receiver();
-            MakePhoto command = new MakePhoto(receiver);
-            invoker.SetCommand(command);
-            invoker.Run();
-            label26.Visible = true;
-            pictureBox4.Image = Image.FromFile("C:/Users/UltraUser/Программирование/MaiLabs/3 semestr/lab14/bad.jpg");
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
         }
-        private void button9_Click(object sender, EventArgs e)
-        {
-            Invoker invoker = new Invoker();
-            Receiver receiver = new Receiver();
-            MakePhoto command = new MakePhoto(receiver);
-            invoker.SetCommand(command);
-            invoker.Run();
-            label13.Text = "Восхитительно!";
-            button9.Visible = false;
-            button10.Visible = true;
-            pictureBox4.Image = (Image)goodPhoto;
-            label26.Visible = true;
-            if (money >= 0)
-            {
-                label25.Text = "После путешествия у Вас осталось " + money + "Р";
-            }
-            else label25.Text = "Вам нужно накопить " + money*(-1) + "Р";
-        }
-
-    
         //
 
         private void label1_Click(object sender, EventArgs e) { }
+        private void pictureBox1_Click(object sender, EventArgs e) { }
         private void Form1_Load(object sender, EventArgs e) { }
         private void label2_Click(object sender, EventArgs e) { }
+        private void textBox1_TextChanged(object sender, EventArgs e) { }
+        private void label3_Click(object sender, EventArgs e) { }
+        private void label4_Click(object sender, EventArgs e) { }
         private void label5_Click(object sender, EventArgs e) { }
+        private void pictureBox2_Click(object sender, EventArgs e) { }
         private void label6_Click(object sender, EventArgs e) { }
         private void label7_Click(object sender, EventArgs e) { }
+        private void groupBox1_Enter(object sender, EventArgs e) { }
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e) { }
         private void radioButton2_CheckedChanged(object sender, EventArgs e) { }
         private void radioButton4_CheckedChanged(object sender, EventArgs e) { }
@@ -364,96 +305,35 @@ namespace coursepj
         private void label10_Click(object sender, EventArgs e) { }
         private void label11_Click(object sender, EventArgs e) { }
         private void radioButton10_CheckedChanged(object sender, EventArgs e) { }
+        private void pictureBox4_Click(object sender, EventArgs e) { }
         private void radioButton11_CheckedChanged(object sender, EventArgs e) { }
+        private void groupBox2_Enter(object sender, EventArgs e) { }
         private void radioButton12_CheckedChanged(object sender, EventArgs e) { }
         private void radioButton13_CheckedChanged(object sender, EventArgs e) { }
-        private void radioButton7_CheckedChanged(object sender, EventArgs e) { }
-        private void radioButton9_CheckedChanged(object sender, EventArgs e) { }
-        private void radioButton8_CheckedChanged(object sender, EventArgs e) { }
-        private void radioButton6_CheckedChanged(object sender, EventArgs e) { }
-        private void pictureBox6_Click(object sender, EventArgs e) { }
-        private void panel1_Paint(object sender, PaintEventArgs e) { }
-        private void pictureBox2_Click(object sender, EventArgs e) { }
-        private void pictureBox1_Click(object sender, EventArgs e) { }
-        private void textBox1_TextChanged(object sender, EventArgs e) { }
-        private void label3_Click(object sender, EventArgs e) { }
-        private void label4_Click(object sender, EventArgs e) { }
-        private void panel2_Paint(object sender, PaintEventArgs e) { }
-        private void pictureBox4_Click(object sender, EventArgs e) { }
-        private void label13_Click(object sender, EventArgs e) { }
 
-        private void label14_Click(object sender, EventArgs e)
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label26_Click(object sender, EventArgs e)
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label28_Click(object sender, EventArgs e)
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-            label26.Visible = false;
-            label28.Visible = true;
-            label25.Visible = true;
-            label11.Visible = false;
-            label13.Visible = false;
-            button9.Visible = false;
-            pictureBox4.Visible = false;
-            button10.Visible = false;
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
 
         }
-    }
-    abstract class Command
-    {
-        public abstract void Execute();
-        public abstract void Undo();
-    }
 
-    class MakePhoto : Command
-    {
-        Receiver receiver;
-        public MakePhoto(Receiver r)
+        private void pictureBox5_Click(object sender, EventArgs e)
         {
-            receiver = r;
-        }
-        public override void Execute()
-        {
-            receiver.Operation();
-        }
-        public override void Undo()
-        { }
-    }
-    class Receiver
-    {
-        public void Operation()
-        { }
-    }
-    class Invoker
-    {
-        Command command;
-        public void SetCommand(Command c)
-        {
-            command = c;
-        }
-        public void Run()
-        {
-            command.Execute();
-        }
-        public void Cancel()
-        {
-            command.Undo();
+
         }
     }
 }

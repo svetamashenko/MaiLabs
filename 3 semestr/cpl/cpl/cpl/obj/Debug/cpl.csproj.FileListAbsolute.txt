@@ -1,0 +1,5 @@
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\cpl\cpl\cpl\obj\Debug\cpl.csprojAssemblyReference.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\cpl\cpl\cpl\obj\Debug\cpl.Properties.Resources.resources
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\cpl\cpl\cpl\obj\Debug\cpl.csproj.GenerateResource.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\cpl\cpl\cpl\obj\Debug\cpl.csproj.CoreCompileInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\cpl\cpl\cpl\obj\Debug\coursepj.Form1.resources

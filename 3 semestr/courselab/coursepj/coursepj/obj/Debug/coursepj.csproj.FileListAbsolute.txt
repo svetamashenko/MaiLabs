@@ -1,0 +1,10 @@
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\courselab\coursepj\coursepj\bin\Debug\coursepj.exe.config
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\courselab\coursepj\coursepj\bin\Debug\coursepj.exe
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\courselab\coursepj\coursepj\bin\Debug\coursepj.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\courselab\coursepj\coursepj\obj\Debug\coursepj.csprojAssemblyReference.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\courselab\coursepj\coursepj\obj\Debug\coursepj.Form1.resources
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\courselab\coursepj\coursepj\obj\Debug\coursepj.Properties.Resources.resources
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\courselab\coursepj\coursepj\obj\Debug\coursepj.csproj.GenerateResource.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\courselab\coursepj\coursepj\obj\Debug\coursepj.csproj.CoreCompileInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\courselab\coursepj\coursepj\obj\Debug\coursepj.exe
+C:\Users\UltraUser\Программирование\MaiLabs\3 semestr\courselab\coursepj\coursepj\obj\Debug\coursepj.pdb
