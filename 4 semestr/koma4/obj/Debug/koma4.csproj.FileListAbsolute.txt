@@ -1,0 +1,26 @@
+C:\Users\tunkimi\Desktop\projects\CS\koma4\obj\Debug\koma4.csprojAssemblyReference.cache
+C:\Users\tunkimi\Desktop\projects\CS\koma4\obj\Debug\koma4.Form1.resources
+C:\Users\tunkimi\Desktop\projects\CS\koma4\obj\Debug\koma4.Properties.Resources.resources
+C:\Users\tunkimi\Desktop\projects\CS\koma4\obj\Debug\koma4.csproj.GenerateResource.cache
+C:\Users\tunkimi\Desktop\projects\CS\koma4\obj\Debug\koma4.csproj.CoreCompileInputs.cache
+C:\Users\tunkimi\Desktop\projects\CS\koma4\bin\Debug\koma4.exe.config
+C:\Users\tunkimi\Desktop\projects\CS\koma4\bin\Debug\koma4.exe
+C:\Users\tunkimi\Desktop\projects\CS\koma4\bin\Debug\koma4.pdb
+C:\Users\tunkimi\Desktop\projects\CS\koma4\obj\Debug\koma4.exe
+C:\Users\tunkimi\Desktop\projects\CS\koma4\obj\Debug\koma4.pdb
+C:\Users\tunkimi\Desktop\projects\CS\koma4\obj\Debug\koma4.form41.resources
+C:\Users\tunkimi\Desktop\projects\CS\koma4\obj\Debug\koma4.Form42.resources
+C:\Users\tunkimi\Desktop\projects\CS\koma4\obj\Debug\koma4.Form43.resources
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\bin\Debug\koma4.exe.config
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\bin\Debug\koma4.exe
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\bin\Debug\koma4.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\obj\Debug\koma4.csprojAssemblyReference.cache
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\obj\Debug\koma4.Form1.resources
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\obj\Debug\koma4.form41.resources
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\obj\Debug\koma4.Form42.resources
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\obj\Debug\koma4.Form43.resources
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\obj\Debug\koma4.Properties.Resources.resources
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\obj\Debug\koma4.csproj.GenerateResource.cache
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\obj\Debug\koma4.csproj.CoreCompileInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\obj\Debug\koma4.exe
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\koma4\obj\Debug\koma4.pdb

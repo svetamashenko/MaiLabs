@@ -1,0 +1,10 @@
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\lab8\lab8\bin\Debug\lab8.exe.config
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\lab8\lab8\bin\Debug\lab8.exe
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\lab8\lab8\bin\Debug\lab8.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\lab8\lab8\obj\Debug\lab8.csprojAssemblyReference.cache
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\lab8\lab8\obj\Debug\lab8.Properties.Resources.resources
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\lab8\lab8\obj\Debug\lab8.csproj.GenerateResource.cache
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\lab8\lab8\obj\Debug\lab8.csproj.CoreCompileInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\lab8\lab8\obj\Debug\lab8.exe
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\lab8\lab8\obj\Debug\lab8.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\4 semestr\lab8\lab8\obj\Debug\lab8.Form1.resources
