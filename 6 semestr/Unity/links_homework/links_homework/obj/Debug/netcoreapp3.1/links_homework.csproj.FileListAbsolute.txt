@@ -1,0 +1,13 @@
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\bin\Debug\netcoreapp3.1\links_homework.exe
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\bin\Debug\netcoreapp3.1\links_homework.deps.json
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\bin\Debug\netcoreapp3.1\links_homework.runtimeconfig.json
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\bin\Debug\netcoreapp3.1\links_homework.runtimeconfig.dev.json
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\bin\Debug\netcoreapp3.1\links_homework.dll
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\bin\Debug\netcoreapp3.1\links_homework.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\obj\Debug\netcoreapp3.1\links_homework.csprojAssemblyReference.cache
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\obj\Debug\netcoreapp3.1\links_homework.AssemblyInfoInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\obj\Debug\netcoreapp3.1\links_homework.AssemblyInfo.cs
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\obj\Debug\netcoreapp3.1\links_homework.csproj.CoreCompileInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\obj\Debug\netcoreapp3.1\links_homework.dll
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\obj\Debug\netcoreapp3.1\links_homework.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\links_homework\links_homework\obj\Debug\netcoreapp3.1\links_homework.genruntimeconfig.cache

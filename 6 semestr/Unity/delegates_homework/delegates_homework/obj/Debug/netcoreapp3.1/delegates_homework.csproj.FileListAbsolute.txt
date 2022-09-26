@@ -1,0 +1,13 @@
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\bin\Debug\netcoreapp3.1\delegates_homework.exe
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\bin\Debug\netcoreapp3.1\delegates_homework.deps.json
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\bin\Debug\netcoreapp3.1\delegates_homework.runtimeconfig.json
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\bin\Debug\netcoreapp3.1\delegates_homework.runtimeconfig.dev.json
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\bin\Debug\netcoreapp3.1\delegates_homework.dll
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\bin\Debug\netcoreapp3.1\delegates_homework.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\obj\Debug\netcoreapp3.1\delegates_homework.csprojAssemblyReference.cache
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\obj\Debug\netcoreapp3.1\delegates_homework.AssemblyInfoInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\obj\Debug\netcoreapp3.1\delegates_homework.AssemblyInfo.cs
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\obj\Debug\netcoreapp3.1\delegates_homework.csproj.CoreCompileInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\obj\Debug\netcoreapp3.1\delegates_homework.dll
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\obj\Debug\netcoreapp3.1\delegates_homework.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\delegates_homework\delegates_homework\obj\Debug\netcoreapp3.1\delegates_homework.genruntimeconfig.cache

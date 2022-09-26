@@ -1,0 +1,13 @@
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\bin\Debug\netcoreapp3.1\collections_homework.exe
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\bin\Debug\netcoreapp3.1\collections_homework.deps.json
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\bin\Debug\netcoreapp3.1\collections_homework.runtimeconfig.json
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\bin\Debug\netcoreapp3.1\collections_homework.runtimeconfig.dev.json
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\bin\Debug\netcoreapp3.1\collections_homework.dll
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\bin\Debug\netcoreapp3.1\collections_homework.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\obj\Debug\netcoreapp3.1\collections_homework.csprojAssemblyReference.cache
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\obj\Debug\netcoreapp3.1\collections_homework.AssemblyInfoInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\obj\Debug\netcoreapp3.1\collections_homework.AssemblyInfo.cs
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\obj\Debug\netcoreapp3.1\collections_homework.csproj.CoreCompileInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\obj\Debug\netcoreapp3.1\collections_homework.dll
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\obj\Debug\netcoreapp3.1\collections_homework.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Unity\collections_homework\collections_homework\obj\Debug\netcoreapp3.1\collections_homework.genruntimeconfig.cache

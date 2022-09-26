@@ -1,0 +1,10 @@
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Численные методы\lab1.4\lab1.4\bin\Debug\lab1.4.exe.config
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Численные методы\lab1.4\lab1.4\bin\Debug\lab1.4.exe
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Численные методы\lab1.4\lab1.4\bin\Debug\lab1.4.pdb
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Численные методы\lab1.4\lab1.4\obj\Debug\lab1.4.csprojAssemblyReference.cache
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Численные методы\lab1.4\lab1.4\obj\Debug\lab1._4.Form1.resources
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Численные методы\lab1.4\lab1.4\obj\Debug\lab1._4.Properties.Resources.resources
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Численные методы\lab1.4\lab1.4\obj\Debug\lab1.4.csproj.GenerateResource.cache
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Численные методы\lab1.4\lab1.4\obj\Debug\lab1.4.csproj.CoreCompileInputs.cache
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Численные методы\lab1.4\lab1.4\obj\Debug\lab1.4.exe
+C:\Users\UltraUser\Программирование\MaiLabs\6 semestr\Численные методы\lab1.4\lab1.4\obj\Debug\lab1.4.pdb

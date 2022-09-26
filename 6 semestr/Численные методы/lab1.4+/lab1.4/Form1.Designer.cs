@@ -1,0 +1,140 @@
+﻿namespace lab1._4
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Обязательная переменная конструктора.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Освободить все используемые ресурсы.
+        /// </summary>
+        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Код, автоматически созданный конструктором форм Windows
+
+        /// <summary>
+        /// Требуемый метод для поддержки конструктора — не изменяйте 
+        /// содержимое этого метода с помощью редактора кода.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.CoefsTextBox = new System.Windows.Forms.TextBox();
+            this.CoefsLabel = new System.Windows.Forms.Label();
+            this.SolvingLabel = new System.Windows.Forms.Label();
+            this.DoButton = new System.Windows.Forms.Button();
+            this.EpsilonLabel = new System.Windows.Forms.Label();
+            this.EpsilonTextBox = new System.Windows.Forms.TextBox();
+            this.СheckLabel = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // CoefsTextBox
+            // 
+            this.CoefsTextBox.Font = new System.Drawing.Font("Times New Roman", 11F);
+            this.CoefsTextBox.Location = new System.Drawing.Point(31, 129);
+            this.CoefsTextBox.Multiline = true;
+            this.CoefsTextBox.Name = "CoefsTextBox";
+            this.CoefsTextBox.Size = new System.Drawing.Size(166, 154);
+            this.CoefsTextBox.TabIndex = 0;
+            this.CoefsTextBox.Text = "5 5 3\r\n5 -4 1\r\n3 1 2";
+            // 
+            // CoefsLabel
+            // 
+            this.CoefsLabel.AutoSize = true;
+            this.CoefsLabel.Font = new System.Drawing.Font("Times New Roman", 11F);
+            this.CoefsLabel.Location = new System.Drawing.Point(27, 77);
+            this.CoefsLabel.Name = "CoefsLabel";
+            this.CoefsLabel.Size = new System.Drawing.Size(148, 21);
+            this.CoefsLabel.TabIndex = 1;
+            this.CoefsLabel.Text = "Входные данные:";
+            // 
+            // SolvingLabel
+            // 
+            this.SolvingLabel.AutoSize = true;
+            this.SolvingLabel.Font = new System.Drawing.Font("Times New Roman", 11F);
+            this.SolvingLabel.Location = new System.Drawing.Point(332, 77);
+            this.SolvingLabel.Name = "SolvingLabel";
+            this.SolvingLabel.Size = new System.Drawing.Size(204, 63);
+            this.SolvingLabel.TabIndex = 2;
+            this.SolvingLabel.Text = "Собственные значения: \n\n\n";
+            // 
+            // DoButton
+            // 
+            this.DoButton.Font = new System.Drawing.Font("Times New Roman", 11F);
+            this.DoButton.Location = new System.Drawing.Point(336, 355);
+            this.DoButton.Name = "DoButton";
+            this.DoButton.Size = new System.Drawing.Size(122, 38);
+            this.DoButton.TabIndex = 3;
+            this.DoButton.Text = "Вычислить.";
+            this.DoButton.UseVisualStyleBackColor = true;
+            this.DoButton.Click += new System.EventHandler(this.DoButton_Click);
+            // 
+            // EpsilonLabel
+            // 
+            this.EpsilonLabel.AutoSize = true;
+            this.EpsilonLabel.Font = new System.Drawing.Font("Times New Roman", 11F);
+            this.EpsilonLabel.Location = new System.Drawing.Point(212, 77);
+            this.EpsilonLabel.Name = "EpsilonLabel";
+            this.EpsilonLabel.Size = new System.Drawing.Size(91, 21);
+            this.EpsilonLabel.TabIndex = 6;
+            this.EpsilonLabel.Text = "Точность:";
+            // 
+            // EpsilonTextBox
+            // 
+            this.EpsilonTextBox.Font = new System.Drawing.Font("Times New Roman", 11F);
+            this.EpsilonTextBox.Location = new System.Drawing.Point(216, 129);
+            this.EpsilonTextBox.Name = "EpsilonTextBox";
+            this.EpsilonTextBox.Size = new System.Drawing.Size(87, 29);
+            this.EpsilonTextBox.TabIndex = 5;
+            this.EpsilonTextBox.Text = "0,0001";
+            // 
+            // СheckLabel
+            // 
+            this.СheckLabel.AutoSize = true;
+            this.СheckLabel.Font = new System.Drawing.Font("Times New Roman", 11F);
+            this.СheckLabel.Location = new System.Drawing.Point(576, 77);
+            this.СheckLabel.Name = "СheckLabel";
+            this.СheckLabel.Size = new System.Drawing.Size(96, 63);
+            this.СheckLabel.TabIndex = 7;
+            this.СheckLabel.Text = "Проверка: \n\n\n";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(900, 450);
+            this.Controls.Add(this.СheckLabel);
+            this.Controls.Add(this.EpsilonLabel);
+            this.Controls.Add(this.EpsilonTextBox);
+            this.Controls.Add(this.DoButton);
+            this.Controls.Add(this.SolvingLabel);
+            this.Controls.Add(this.CoefsLabel);
+            this.Controls.Add(this.CoefsTextBox);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox CoefsTextBox;
+        private System.Windows.Forms.Label CoefsLabel;
+        private System.Windows.Forms.Label SolvingLabel;
+        private System.Windows.Forms.Button DoButton;
+        private System.Windows.Forms.Label EpsilonLabel;
+        private System.Windows.Forms.TextBox EpsilonTextBox;
+        private System.Windows.Forms.Label СheckLabel;
+    }
+}
+
